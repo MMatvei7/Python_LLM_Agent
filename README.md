@@ -1,17 +1,36 @@
 ```markdown
 # Code Review Agent with RAG
 
-AI-powered Python code analyzer using LangChain, FAISS, and Mistral AI. Analyzes code with optional context from custom PDF documents.
+Это AI-powered Python code analyzer, использующий LangChain, FAISS и Mistral AI.
 
-The AI-agent uses easy-customized LLM, input pdf documents so you can adapt agent work for company needs.
+Я отдал предпочтение Mistral AI API, потому что это бесплатная версия
+и там хороший лимит на использование больших LLM. Выбор модели легко кастомизируется.
+Код агента располагается в файле code_review.py
+
+Я решил, что использование RAG уместно, так как агент в таком случае
+учитывает специализированные условия и предпочтения -
+например компании необходимо анализировать код по
+некоторому стандарту. Тогда стандарт в формате пдф моджно подгрузить
+и агент будет на него ориентироваться. В моем решении в качестве "стандарта"
+используются статьи с Arxiv - лежат в папке defaults_pdfs.
+Реализована загрузка любых других pdf-файлов - нужно подгрузить их
+в папку pdf_documents(более подробная инструкция по настройке окружения ниже)
+
+Я использую LangChain так как эта библиотека позволяет удобно
+и изящно строить пайплайны и связывать все необходимые компоненты
 
 ```
 ![RAG Architecture](project_overview.png)
 
 ```
 
-## How It Works
-Input Python code -> Text Embedding(using  HuggingFace Embeddings) -> Query and Document embedding store in Vector DB -> LLM gets enhaced prompt -> OutPut
+## Принцип работы
+Input Python code -> Text Embedding(using  HuggingFace Embeddings) ->
+Query and Document embedding сохраняются в Vector DB ->
+ LLM получает улучшенный контекст -> OutPut
+
+Пример входного файла - test.py,
+пример отчета - output.txt 
 
 ## Quick Start
 
