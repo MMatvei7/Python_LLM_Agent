@@ -10,4 +10,4 @@ services:
       - MISTRAL_API_KEY=${MISTRAL_API_KEY}
       - CACHE_PATH=${CACHE_PATH}
       - DEFAULT_PDF_FOLDER=${DEFAULT_PDF_FOLDER}
-    working_dir: /app/workspace
+    working_dir: /app
