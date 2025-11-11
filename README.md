@@ -51,11 +51,10 @@ Get API key: https://console.mistral.ai
 
 Edit `.env` and add your Mistral API key:
 
-```
+
 MISTRAL_API_KEY=your_mistral_api_key_here
 CACHE_PATH=faiss_pdf_index
 DEFAULT_PDF_FOLDER=pdf_documents
-```
 
 ### 3. Build Docker Image
 
