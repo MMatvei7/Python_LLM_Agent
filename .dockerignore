@@ -1,0 +1,13 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+.env.example
+README.md
+output.txt
+faiss_pdf_index*
+.pytest_cache
+.venv
+venv
+node_modules
+*.pdf

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  code-review:
+    build: .
+    container_name: code-review-agent
+    volumes:
+      - ./pdf_documents:/app/pdf_documents
+    environment:
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY}
+      - CACHE_PATH=${CACHE_PATH}
+      - DEFAULT_PDF_FOLDER=${DEFAULT_PDF_FOLDER}
+    working_dir: /app/workspace

@@ -1,0 +1,8 @@
+langchain==1.0.5
+langchain-community>=0.0.10
+langchain-mistralai>=0.0.1
+langchain-huggingface>=0.0.1
+python-dotenv>=1.0.0
+pypdf>=3.17.0
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
