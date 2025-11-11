@@ -6,6 +6,7 @@ services:
     container_name: code-review-agent
     volumes:
       - ./pdf_documents:/app/pdf_documents
+      - .:/app
     environment:
       - MISTRAL_API_KEY=${MISTRAL_API_KEY}
       - CACHE_PATH=${CACHE_PATH}
