@@ -3,17 +3,21 @@
 
 AI-powered Python code analyzer using LangChain, FAISS, and Mistral AI. Analyzes code with optional context from custom PDF documents.
 
-The AI-agent uses easy-customized LLM
+The AI-agent uses easy-customized LLM, input pdf documents so you can adapt agent work for company needs.
 
+```
+![RAG Architecture](project_overview.png)
+
+```
+
+## How It Works
+Input Python code -> Text Embedding(using  HuggingFace Embeddings) -> Query and Document embedding store in Vector DB -> LLM gets enhaced prompt -> OutPut
 
 ## Quick Start
 
 ### 1. Clone & Setup
 
-```
 git clone https://github.com/MMatvei7/Python_LLM_Agent.git
-![RAG Architecture](project_overview.png)
-```
 
 ### 2. Configure API Key
 
@@ -57,9 +61,7 @@ docker-compose run code-review /app/pdf_documents/test.py --rag --custom-pdf
 
 Results saved to `output.txt`
 
-## How It Works
-
-1. **Code Analysis**: LLM analyzes your Python code
+1. **Code Analysis**: LLM analyzes your Input Python code
 2. **RAG (Optional)**: Searches PDF documents for relevant context
 3. **FAISS Indexing**: Fast semantic search through documents
 4. **Caching**: FAISS index cached for speed
