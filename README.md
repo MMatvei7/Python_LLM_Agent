@@ -4,7 +4,7 @@
 AI-powered Python code analyzer using LangChain, FAISS, and Mistral AI. Analyzes code with optional context from custom PDF documents.
 
 The AI-agent uses easy-customized LLM
-![RAG Architecture](project_overview.png)
+
 
 ## Quick Start
 
@@ -12,6 +12,7 @@ The AI-agent uses easy-customized LLM
 
 ```
 git clone https://github.com/MMatvei7/Python_LLM_Agent.git
+![RAG Architecture](project_overview.png)
 ```
 
 ### 2. Configure API Key
