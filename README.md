@@ -30,7 +30,9 @@ Query and Document embedding сохраняются в Vector DB ->
  LLM получает улучшенный контекст -> OutPut
 
 Пример входного файла - test.py,
-пример отчета - output.txt 
+пример отчета - output.txt
+Также примеры можно найти в папке examples - для случая
+использования RAG и для случая простого запроса к LLM
 
 ## Quick Start
 
