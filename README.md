@@ -23,7 +23,7 @@ git clone https://github.com/MMatvei7/Python_LLM_Agent.git
 
 Get API key: https://console.mistral.ai
 
-1. Go to https://console.mistral.ai
+1. Go to https://mistral.ai/
 2. Click "Start Building" button
 3. Register for free account
 4. Confirm your phone number (required)
@@ -78,5 +78,3 @@ Results saved to `output.txt`
 | `docker-compose down` | Stop containers |
 
 ***
-
-Сохрани это как `README.md` в корне проекта. Это краткий README, который фокусируется на практическом использовании через docker-compose. 🚀
