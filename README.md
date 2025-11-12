@@ -83,11 +83,11 @@ docker-compose run code-review /app/pdf_documents/test.py --rag --custom-pdf
 
 Results saved to `output.txt`
 
-1. **Code Analysis**: LLM analyzes your Input Python code
-2. **RAG (Optional)**: Searches PDF documents for relevant context
-3. **FAISS Indexing**: Fast semantic search through documents
-4. **Caching**: FAISS index cached for speed
-5. **Output**: Analysis with source documents
+1. Code Analysis: LLM analyzes your Input Python code
+2. RAG (Optional): Searches PDF documents for relevant context
+3. FAISS Indexing: Fast semantic search through documents
+4. Caching: FAISS index cached for speed
+5. Output: Analysis with source documents
 
 ## Commands Reference
 
